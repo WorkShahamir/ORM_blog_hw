@@ -1,4 +1,3 @@
-from django.contrib.auth.models import AbstractUser
 from django.utils import timezone
 from .models import Author, Article, Publication
 
@@ -36,3 +35,6 @@ for author in Author.objects.order_by('date_register'):
 print('\nСтатьи автора Nursultan:')
 for article in Article.objects.filter(author=nursultan):
     print(article.title)
+
+
+
